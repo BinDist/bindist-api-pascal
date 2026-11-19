@@ -1,0 +1,17 @@
+# FPC / Lazarus build output
+lib/
+*.o
+*.ppu
+*.a
+*.compiled
+*.res
+backup/
+
+# Executables
+examples/SmokeTest
+tests/TestHelpers
+tests/TestClient
+*.exe
+*.dll
+*.so
+*.dylib

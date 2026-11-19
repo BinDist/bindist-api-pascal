@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <Name Value="bindist_fpc"/>
+    <Type Value="RunTimeOnly"/>
+    <Author Value="BinDist"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <SyntaxMode Value="Delphi"/>
+        </SyntaxOptions>
+      </Parsing>
+    </CompilerOptions>
+    <Description Value="BinDist API client (customer + admin) for Free Pascal 3.2.2+. Mirrors the Delphi client in bindist-api-delphi."/>
+    <License Value="MIT"/>
+    <Version Major="1"/>
+    <Files>
+      <Item>
+        <Filename Value="BinDist.Exceptions.pas"/>
+        <UnitName Value="BinDist.Exceptions"/>
+      </Item>
+      <Item>
+        <Filename Value="BinDist.Interfaces.pas"/>
+        <UnitName Value="BinDist.Interfaces"/>
+      </Item>
+      <Item>
+        <Filename Value="BinDist.Sha256.pas"/>
+        <UnitName Value="BinDist.Sha256"/>
+      </Item>
+      <Item>
+        <Filename Value="BinDist.FpcCompat.pas"/>
+        <UnitName Value="BinDist.FpcCompat"/>
+      </Item>
+      <Item>
+        <Filename Value="BinDist.ClientV1.pas"/>
+        <UnitName Value="BinDist.ClientV1"/>
+      </Item>
+      <Item>
+        <Filename Value="BinDist.AdminV1.pas"/>
+        <UnitName Value="BinDist.AdminV1"/>
+      </Item>
+      <Item>
+        <Filename Value="BinDist.Factory.pas"/>
+        <UnitName Value="BinDist.Factory"/>
+      </Item>
+    </Files>
+    <RequiredPkgs>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>
